@@ -1,0 +1,3 @@
+v11.2.501
+- First version, extracted hide realm names from Kallye Raid Frames
+- Retail, Classic & MoP versions

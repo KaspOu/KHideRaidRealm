@@ -1,0 +1,29 @@
+## Interface: 110205, 50501, 11507
+## Title: |cff00ff00K|r Hide Raid Real Names
+## Title-frFR: |cff00ff00K|r Hide Raid Real Names
+## Notes: Hides realm names on raid frames.
+## Notes-frFR: Masque le royaume sur les noms de raid
+## Notes-ruRU: Скрывает названия игровых миров на рейдовых фреймах.
+## Notes-deDE: Verbirgt die Realm-Namen auf den Schlachtzugsfenstern.
+## Notes-esES: Oculta los nombres de reino en los marcos de banda.
+## Notes-esMX: Oculta los nombres de reino en los marcos de banda.
+## Notes-itIT: Nasconde i nomi dei reami sui riquadri del raid.
+## Notes-koKR: 공격대 프레임에서 서버 이름을 숨깁니다.
+## Notes-ptBR: Oculta os nomes de reino nos quadros de raide.
+## Notes-zhCN: 在团队框架上隐藏服务器名称。
+## Notes-zhTW: 在團隊框架上隱藏伺服器名稱。
+
+## Version: 11.2.501
+## Author: Kallye of Elune
+## IconTexture: Interface\AddOns\KHideRaidRealm\Logo32
+
+## X-Category: Raid Frames, Interface Enhancements
+## X-Localizations: enUS, frFR, ruRU, deDE, esES, esMX, itIT, koKR, ptBR, zhCN, zhTW
+## X-License: MIT
+## X-Website: https://github.com/KaspOu/KHideRaidRealm/
+## X-Curse-Project-ID: 1363377
+
+Core\KHideRaidRealm.globals.lua
+Core\locales.xml
+Modules\modules.xml
+Core\KHideRaidRealm.lua

@@ -1,0 +1,20 @@
+package-as: KHideRaidRealm
+
+manual-changelog: ChangeLog.txt
+
+license-output: License.txt
+
+ignore:
+    - *\Libs\*\*.rockspec
+    - *\Libs\*\*.toc
+    - *\Libs\*\*.url
+    - *\Libs\*\.checkout\
+    - *\Libs\*\changelog.*
+    - *\Libs\*\CHANGELOG.*
+    - *\Libs\*\docs
+    - *\Libs\*\examples
+    - *\Libs\*\README.*
+    - *\Libs\*\tests
+    - *\Libs\*\.pkgmeta
+    - .vscode
+    - .release*

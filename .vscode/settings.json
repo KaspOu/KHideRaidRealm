@@ -1,0 +1,74 @@
+{
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.diagnostics.globals": [
+        "BackdropTemplateMixin",
+        "CompactPartyFrame",
+        "CompactRaidFrameContainer_TryUpdate",
+        "CompactRaidFrameContainer",
+        "CompactRaidFrameManager",
+        "DEFAULT_CHAT_FRAME",
+        "EditModeManagerFrame",
+        "HUD_EDIT_MODE_MENU",
+        "HUD_EDIT_MODE_PARTY_FRAMES_LABEL",
+        "HUD_EDIT_MODE_SETTING_UNIT_FRAME_RAID_STYLE_PARTY_FRAMES",
+        "KRF_TITLE",
+        "PartyFrame",
+        "SELECTED_CHAT_FRAME",
+        "SlashCmdList",
+        "WOW_PROJECT_ID",
+        "WOW_PROJECT_MAINLINE",
+        "EditModeSettingDisplayInfoManager",
+        "EditModePresetLayoutManager",
+        "AddonList",
+        "DropDownList1",
+        "tAppendAll",
+        "ShowUIPanel",
+        "HideUIPanel",
+        "UIParent",
+        "CopyTable",
+        "SetCVar",
+        "GetCVarBool",
+        "GetLocale"
+    ],
+    "cSpell.words": [
+        "prepatch"
+    ],
+    "Lua.diagnostics.disable": [
+    ],
+    "peacock.color": "EE5050",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#f37e7e",
+        "activityBar.background": "#f37e7e",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#a8f7a8",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#f37e7e",
+        "sideBar.border": "#f37e7e",
+        "statusBar.background": "#ee5050",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#f37e7e",
+        "statusBarItem.remoteBackground": "#ee5050",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "tab.activeBorder": "#f37e7e",
+        "titleBar.activeBackground": "#ee5050",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#ee505099",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "Lua.runtime.builtin": {
+        "basic": "disable",
+        "debug": "disable",
+        "io": "disable",
+        "math": "disable",
+        "os": "disable",
+        "package": "disable",
+        "string": "disable",
+        "table": "disable",
+        "utf8": "disable"
+    },
+    "Lua.workspace.library": [
+        "c:\\Users\\Utilisateur\\.cursor\\extensions\\ketho.wow-api-0.20.6\\Annotations\\Core"
+    ]
+}
