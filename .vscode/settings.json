@@ -27,8 +27,7 @@
         "UIParent",
         "CopyTable",
         "SetCVar",
-        "GetCVarBool",
-        "GetLocale"
+        "GetCVarBool"
     ],
     "cSpell.words": [
         "prepatch"
