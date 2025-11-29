@@ -1,4 +1,4 @@
-## Interface: 120000, 110205, 50501, 50502, 11508
+## Interface: 120000, 110205, 110207, 50501, 50502, 38000, 11508
 ## Title: |cff00ff00K|r Hide Raid Real Names
 ## Title-frFR: |cff00ff00K|r Hide Raid Real Names
 ## Notes: Hides realm names on raid frames.
@@ -13,7 +13,7 @@
 ## Notes-zhCN: 在团队框架上隐藏服务器名称。
 ## Notes-zhTW: 在團隊框架上隱藏伺服器名稱。
 
-## Version: 11.2.503
+## Version: 11.2.701
 ## Author: Kallye of Elune
 ## IconTexture: Interface\AddOns\KHideRaidRealm\Logo32
 
