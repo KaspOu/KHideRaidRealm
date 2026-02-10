@@ -1,3 +1,22 @@
+v12.0.101
+- Toc updated
+
+v12.0.003
+- Shared code updated
+
+v12.0.002
+- Sliders fixed (Anniversary)
+
+v12.0.001
+- Midnight prepatch
+
+v11.2.702
+- Classic Anniversary
+
+v11.2.701
+- TWW 11.2.7
+- Wotlk China
+
 v11.2.503
 - Classic 1.15.8
 
