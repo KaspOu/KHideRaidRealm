@@ -13,7 +13,7 @@
 ## Notes-zhCN: 在团队框架上隐藏服务器名称。
 ## Notes-zhTW: 在團隊框架上隱藏伺服器名稱。
 
-## Version: 12.0.101
+## Version: 12.0.102
 ## Author: Kallye of Elune
 ## IconTexture: Interface\AddOns\KHideRaidRealm\Logo32
 
