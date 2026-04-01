@@ -44,6 +44,19 @@ local function UnitInPartyOrRaid(frame)
 	-- return UnitInParty(Unit) or UnitInRaid(Unit) or UnitIsUnit(Unit, "player")
 end
 
+local GetUnitNameSafe = function(unit, showServerName)
+	local name, server = UnitName(unit);
+	if ( type(server) ~= "nil") then
+		if ( showServerName ) then
+			return string.format("%s-%s", name, server);
+		end
+		local relationship = UnitRealmRelationship(unit);
+		if (relationship ~= LE_REALM_RELATION_VIRTUAL) then
+			return string.format("%s%s", name, FOREIGN_SERVER_LABEL);
+		end
+	end
+	return name;
+end
 
 --[[
 ! Manage player names (partyframes & nameplates)
@@ -56,7 +69,7 @@ local function Hook_CUF_UpdateName(frame, calledOutsideHook)
 
 	local name = frame.name
 	-- if _G[ns.OPTIONS_NAME].HideRealm then
-	name:SetText(GetUnitName(frame.displayedUnit, false))
+	name:SetText(GetUnitNameSafe(frame.displayedUnit, false))
 end
 
 local function Hook_CUF_UpdateHealth(frame, _)
