@@ -1,3 +1,6 @@
+v12.0.501
+- Midnight 12.0.5
+
 v12.0.103
 - Realm names fixed in instances
 
