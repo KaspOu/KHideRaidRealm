@@ -1,5 +1,6 @@
 local _, ns = ...
 local l = ns.I18N;
+K_Global_Vars = K_Global_Vars or {}
 
 -- * avoid conflict override
 if ns.CONFLICT then return; end
@@ -44,7 +45,7 @@ local function UnitInPartyOrRaid(frame)
 	-- return UnitInParty(Unit) or UnitInRaid(Unit) or UnitIsUnit(Unit, "player")
 end
 
-local GetUnitNameSafe = function(unit, showServerName)
+function K_Global_Vars.GetUnitNameSafe(unit, showServerName)
 	local name, server = UnitName(unit);
 	if ( type(server) ~= "nil") then
 		if ( showServerName ) then
@@ -66,14 +67,18 @@ local function Hook_CUF_UpdateName(frame, calledOutsideHook)
 	if frame:IsForbidden() or not UnitPlayerControlled(frame.displayedUnit) then
 		return
 	end
+	if K_Global_Vars.NameplatesColor_Enabled and not FrameIsCompact(frame) then
+		-- Let compact frames updated by NameplatesColor
+		return
+	end
 
 	local name = frame.name
 	-- if _G[ns.OPTIONS_NAME].HideRealm then
-	name:SetText(GetUnitNameSafe(frame.displayedUnit, false))
+	name:SetText(K_Global_Vars.GetUnitNameSafe(frame.displayedUnit, false))
 end
 
 local function Hook_CUF_UpdateHealth(frame, _)
-	if not frame:IsForbidden() and frame.background and UnitInPartyOrRaid(frame) and FrameIsCompact(frame) then
+	if not frame:IsForbidden() and frame.background and UnitInPartyOrRaid(frame) then
 		Hook_CUF_UpdateName(frame, true)
 	end
 end
@@ -104,5 +109,5 @@ local function onInit(self, options)
 end
 
 local module = ns.Module:new(onInit, "HideRaidRealmNames");
-module:SetOnSaveOptions(onSaveOptions);
+module:SetOnOptionsChanged(onSaveOptions);
 module:SetGetInfo(getInfo);

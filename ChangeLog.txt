@@ -1,3 +1,6 @@
+v12.1.004
+- Nameplates: names fixed while using K Nameplate Color
+
 v12.1.001
 - Midnight 12.1.0
 
