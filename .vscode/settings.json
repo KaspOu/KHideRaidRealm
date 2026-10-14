@@ -27,7 +27,27 @@
         "UIParent",
         "CopyTable",
         "SetCVar",
-        "GetCVarBool"
+        "GetCVarBool",
+        "format",
+        "string",
+        "C_AddOns",
+        "gsub",
+        "tonumber",
+        "CreateFrame",
+        "InCombatLockdown",
+        "select",
+        "_G",
+        "strsub",
+        "hooksecurefunc",
+        "CompactUnitFrame_UpdateHealPrediction",
+        "UnitPlayerControlled",
+        "FOREIGN_SERVER_LABEL",
+        "LE_REALM_RELATION_VIRTUAL",
+        "UnitRealmRelationship",
+        "type",
+        "UnitName",
+        "table",
+        "setmetatable"
     ],
     "cSpell.words": [
         "prepatch"
@@ -68,6 +88,6 @@
         "utf8": "disable"
     },
     "Lua.workspace.library": [
-        "c:\\Users\\Utilisateur\\.cursor\\extensions\\ketho.wow-api-0.20.6\\Annotations\\Core"
+        "c:\\Users\\Utilisateur\\.cursor\\extensions\\ketho.wow-api-0.20.7\\Annotations\\Core"
     ]
 }
