@@ -92,14 +92,14 @@ end
 local function onSaveOptions(self, options)
 	if not ns._HideRealmHooked then
         ns._HideRealmHooked = true;
-		hooksecurefunc("CompactUnitFrame_UpdateName", Hook_CUF_UpdateName);
-		hooksecurefunc("CompactUnitFrame_UpdateHealthColor", Hook_CUF_UpdateHealth);
+		hooksecurefunc("CompactUnitFrame_UpdateName", Hook_CUF_UpdateName --[[@as fun(frame)]]);
+		hooksecurefunc("CompactUnitFrame_UpdateHealthColor", Hook_CUF_UpdateHealth --[[@as fun(frame)]]);
 		if (CompactUnitFrame_UpdateHealPrediction) then
 			--? Since DragonFlight (10)
-			hooksecurefunc("CompactUnitFrame_UpdateHealPrediction", Hook_CUF_UpdateHealth);
+			hooksecurefunc("CompactUnitFrame_UpdateHealPrediction", Hook_CUF_UpdateHealth --[[@as fun(frame)]]);
 		else
 			--? Classic
-			hooksecurefunc("CompactUnitFrame_UpdateHealth", Hook_CUF_UpdateHealth);
+			hooksecurefunc("CompactUnitFrame_UpdateHealth", Hook_CUF_UpdateHealth --[[@as fun(frame)]]);
 		end
     end
     ApplyFuncToRaidFrames(Hook_CUF_UpdateName, false);
