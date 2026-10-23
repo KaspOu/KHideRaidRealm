@@ -12,4 +12,4 @@ l.OPTION_RAIDSTYLE_WARNING = nil
 l.CONFLICT_MESSAGE = "Desativado: Conflito com %s";
 l.MSG_LOADED         = format("%s carregado e ativo", l.VERS_TITLE);
 
-l.INIT_FAILED = format("%s n\195\163o carregado corretamente (conflito ?) !", l.VERS_TITLE);
+l.INIT_FAILED = format("%s não carregado corretamente (conflito ?) !", l.VERS_TITLE);
